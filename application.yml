@@ -1,3 +1,4 @@
+
 spring:
   jackson:
     serialization:
@@ -8,6 +9,6 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://ecommerce-microservice-backend-app-service-discovery-container-1:8761/eureka
+      defaultZone: ${EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE:http://48.216.202.81/eureka}
   instance:
     hostname: ${EUREKA_INSTANCE:localhost}
