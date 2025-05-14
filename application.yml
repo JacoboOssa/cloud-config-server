@@ -11,4 +11,4 @@ eureka:
     service-url:
       defaultZone: http://service-discovery-container/eureka
   instance:
-    hostname: localhost
+    hostname: ecommerce-microservice-backend-app-cloud-config-container-1
