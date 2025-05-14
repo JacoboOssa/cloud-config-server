@@ -9,6 +9,6 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://service-discovery-container/eureka
+      defaultZone: ${EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE:http://service-discovery-container/eureka}
   instance:
-    hostname: localhost
+    hostname: ${EUREKA_INSTANCE:localhost}
